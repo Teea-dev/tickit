@@ -1,7 +1,7 @@
 import React from "react";
 import Reportchart from "./Reportchart";
 import DashboardLayout from "../../layout/DashboardLayout";
-import tiks from "../../assets/group 44.svg";
+// import tiks from "../../assets/group 44.svg";
 import dateSvg from "../../assets/dateSvg.svg";
 import { IoMdArrowDropdown } from "react-icons/io";
 import "./DashboardPages.scss";
