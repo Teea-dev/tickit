@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap");
+
+:root {
+  --basic-font: "Raleway", san-serif;
+  --font-weight: 500;
+  --font-weight1: 600;
+  --font-weight2: 700;
+  --secondary-color: #ee4266;
+  --primary-color: rgba(42, 30, 92, 1);
+}
+.events-container {
+  margin: 0 auto;
+  max-width: 1320px;
+  background: rgba(212, 210, 222, 0.2);
+  padding: 2rem 3rem;
+  font-family: var(--basic-font);
+  .heading {
+    font-weight: var(--font-weight2);
+    font-size: 32px;
+    letter-spacing: 0.5;
+    h1 {
+      display: flex;
+    }
+    input {
+      outline: none;
+      padding: 12px;
+      border: none;
+      background: none;
+      color: var(--secondary-color);
+      font-weight: var(--font-weight2);
+      font-size: 50px;
+      &::placeholder {
+        color: var(--secondary-color);
+        font-weight: var(--font-weight2);
+        font-size: 50px;
+      }
+    }
+    .place {
+      color: var(--secondary-color);
+    }
+  }
+  .categories {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      width: 70%;
+      margin: 2rem 0;
+      li {
+        font-size: 16px;
+        font-weight: var(--font-weight);
+      }
+    }
+  }
+  .events {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center;
+    .event-card {
+      background: rgba(255, 255, 255, 1);
+      border: 1px solid rgba(255, 255, 255, 1);
+      border-radius: 10px;
+      max-width: 270px;
+      .card {
+        margin: 20px;
+        .event-info {
+          margin: 2rem 0;
+        }
+
+        h3 {
+          font-size: 20px;
+          font-weight: var(--font-weight);
+        }
+        .date {
+          margin: 1rem 0;
+          display: flex;
+          gap: 5px;
+        }
+        .location {
+          display: flex;
+          gap: 5px;
+        }
+        .pricing {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 1rem 0;
+          h2 {
+            font-weight: var(--font-weight2);
+            font-size: 20px;
+            color: var(--primary-color);
+          }
+          button {
+            background: var(--secondary-color);
+            border: 1 solid var(--secondary-color);
+            padding: 0.5rem 0.9rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            color: #fff;
+            transition: all ease-in-out 0.3s;
+            &:hover {
+              background: #fff;
+              color: var(--secondary-color);
+              border: 1px solid var(--secondary-color);
+            }
+          }
+        }
+      }
+    }
+  }
+  .more {
+    margin: 32px auto;
+    text-align: center;
+    color: #0a0f0d;
+    border: 2px solid #0a0f0d;
+    border-radius: 5px;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .events-container {
+    padding: 2rem 1rem;
+    .heading {
+      h1 {
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        .place {
+          margin: 0;
+          input {
+            width: 50%;
+            padding: 0;
+            font-size: 24px;
+            &::placeholder {
+              color: var(--secondary-color);
+              font-weight: var(--font-weight2);
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+    .categories {
+      width: 100%;
+      overflow-x: scroll;
+      &::-webkit-scrollbar{
+    display: none;
+      }
+      ul {
+        width: 100%;
+        li {
+          min-width: 150px;
+          font-size: 16px;
+          text-align: center;
+        }
+      }
+    }
+    .events {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      .event-card {
+        justify-content: center;
+        margin: 0 auto;
+        .card {
+          .date,
+          .location {
+            gap: 0.7em;
+            img {
+              margin: 0;
+            }
+          }
+          .pricing {
+            h2,
+            button {
+              font-size: 20px;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .more {
+      h2 {
+        font-size: 16px;
+      }
+      min-width: 50%;
+    }
+  }
+}

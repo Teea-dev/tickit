@@ -1,0 +1,194 @@
+.signup-container {
+  max-width: 1320px;
+  margin: 2rem auto;
+  position: relative;
+  .background {
+    position: absolute;
+    max-width: 100%;
+    top: -3em;
+    z-index: -1;
+  }
+  .signup-wrapper {
+    .product-name {
+      h1 {
+        font-family: var(--home-font);
+        font-size: 32px;
+        font-weight: 700;
+        color: #2a1e5c;
+        text-align: center;
+        margin: 2rem 0;
+      }
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      li {
+        list-style: none;
+        font-family: var(--home-font);
+        font-weight: 500;
+        font-size: 14px;
+      }
+    }
+    .signup {
+      h2 {
+        font-family: var(--home-font2);
+        font-weight: 400;
+        text-align: center;
+        margin-top: 2.5rem;
+      }
+      h3 {
+        font-family: var(--home-font);
+        font-weight: 400;
+        text-align: center;
+        margin: 1rem;
+      }
+      .input-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 30%;
+        margin: 0 auto;
+        input {
+          padding: 1rem;
+          border: 1px solid #2a1e5c;
+          border-radius: 5px;
+          outline: none;
+          font-family: var(--home-font);
+          font-size: 16px;
+          font-weight: 400;
+          color: #2a1e5c;
+        }
+      }
+      .signin-btn {
+        background-color: #ee4266;
+        color: #fff;
+        padding: 1rem;
+        border-radius: 60px;
+        font-family: var(--home-font2);
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+      }
+      .signin {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: var(--home-font);
+        font-size: 16px;
+        font-weight: 400;
+        color: #5c5f5e;
+        margin-top: 1rem;
+        .signup-link {
+          cursor: pointer;
+          color: #ee4266;
+          font-weight: 700;
+          text-decoration: none;
+        }
+        .messageIcon {
+          position: absolute;
+          left: 70em;
+          top: 21rem;
+        }
+        
+      }
+      
+    }
+    .messageIcon {
+      position: absolute;
+      left: 70em;
+      top: 22rem;
+    }
+  }
+  .cards{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    .vendor-card{
+      border: 1px solid #D4D2DE;
+      border-radius: 5px;
+      padding: 5rem 5rem 5rem 1rem;
+      background: #fff;
+      cursor: pointer;
+      h3{
+        font-family: var(--home-font);
+        font-size: 24px;
+        font-weight: 500;
+        color:#0A0F0D;
+        text-align: start;
+        margin: auto !important;
+      }
+      p{
+        font-family: var(--home-font);
+        font-size: 16px;
+        font-weight: 400;
+        color:#5C5F5E;
+         text-align: start;  
+    }
+    }
+    .attendee-card{
+      border: 1px solid #D4D2DE;
+      border-radius: 5px;
+      padding: 5rem 5rem 5rem 1rem;
+      background: #fff;
+      cursor: pointer;
+      h3{
+        font-family: var(--home-font);
+        font-size: 24px;
+        font-weight: 500;
+        color:#0A0F0D;
+        text-align: start;
+        margin: auto !important;
+      }
+      p{
+        font-family: var(--home-font);
+        font-size: 16px;
+        font-weight: 400;
+        color:#5C5F5E;
+         text-align: start;  
+    }
+    }
+    
+  }
+  .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+     .next-page{
+      background-color: #EE4266;
+      color: #fff;
+      padding: 1rem;
+      border: none;
+      border-radius: 60px;
+      font-family: var(--home-font2);
+      font-size: 20px;
+      font-weight: 700;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      width: 366px;
+     }
+     .previous-page{
+      background-color: #fff;
+      color: #EE4266;
+      padding: 1rem;
+      border: none;
+      border-radius: 60px;
+      font-family: var(--home-font2);
+      font-size: 20px;
+      font-weight: 700;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      width: 366px;
+     }
+  }
+}

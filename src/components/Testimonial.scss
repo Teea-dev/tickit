@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Raleway:wght@500;400;700&display=swap");
+
+.container {
+  position: relative;
+  max-width: 1320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+  margin: 10rem 0;
+  .mobileSVG {
+    display: none;
+  }
+  .testimonial-background {
+    position: absolute;
+    max-width: 100%;
+    top: -11em;
+    z-index: -1;
+  }
+  .header-mobile{
+    display: none;
+  }
+  .testimonial {
+    .header {
+      font-family: var(--basic-font);
+      font-size: 20px;
+      font-weight: 500;
+      margin: 2rem;
+      color: var(--secondary-color);
+    }
+    .testimonial-body {
+      margin: 2rem 0;
+      h2 {
+        font-family: var(--home-font2);
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        margin: 2rem 0;
+      }
+      p {
+        font-family: var(--basic-font);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #5c5f5e;
+      }
+    }
+    .customer-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // width: 100%;
+      h4 {
+        font-family: var(--basic-font);
+        font-weight: 400;
+        font-size: 1rem;
+        color: #808080;
+      }
+      h2 {
+        font-family: var(--basic-font);
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: #0a0f0d;
+      }
+      .arrows {
+        display: flex;
+        gap: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 2em;
+    .mobileSVG {
+      display: block;
+      position: absolute;
+      max-width: 100%;
+      top: -36em;
+      z-index: -1;
+    }
+    .testimonial-background {
+      display: none;
+    }
+    .header-mobile {
+      h2 {
+        font-family: var(--basic-font);
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--secondary-color);
+      }
+      display: flex;
+      gap: 1em;
+    }
+    .testimonial {
+      .header {
+        display: none;
+      }
+      .testimonial-body {
+        h2 {
+          font-size: 24px;
+          line-height: 24px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+      .customer-info {
+        justify-content: space-between;
+        gap: 10em;
+        h2 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Raleway:wght@500;400;700&display=swap");
+
+:root {
+  --background-color: #fcd9e0;
+  --secondary-color: #ee4266;
+  --home-font: "Raleway", sans-serif;
+  --home-font2: "Libre Baskerville", serif;
+  --home-font-weight: 500;
+  --home-font-weight2: 400;
+  --home-font-weight1: 700;
+}
+.home-container {
+  position: relative;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 0.4fr);
+  max-width: 1320px;
+  .vector {
+    position: absolute;
+    max-width: 100%;
+    top: -5em;
+    z-index: -1;
+  }
+  .hero-description {
+    background: rgba(252, 217, 224, 0.5);
+    padding: 6rem;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    h1 {
+      font-family: var(--home-font2);
+      font-size: 3.2rem;
+      font-weight: var(--home-font-weight2);
+      margin-bottom: 1rem;
+    }
+    h3 {
+      font-family: var(--home-font);
+      font-size: 1.5rem;
+      font-weight: var(--home-font-weight1);
+      margin-bottom: 1rem;
+      color: var(--secondary-color);
+    }
+    .search {
+      background-color: var(--secondary-color);
+      width: 50%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 1rem;
+      input {
+        background-color: var(--secondary-color);
+        color: #fff;
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        font-family: var(--home-font);
+        font-weight: var(--home-font-weight);
+        &::placeholder {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .image-background {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background: rgba(42, 30, 92, 1);
+    position: absolute;
+    top: 90px;
+    left: -150px;
+    width: 110%;
+    height: 90%;
+    .hero-image {
+      position: absolute;
+      top: 20px;
+      right: -20px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .logos {
+    grid-column: 1/4;
+    font-family: var(--home-font);
+    color: #b8b4c9;
+    font-weight: var(--home-font-weight);
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .home-container {
+    
+    grid-template-columns: 1fr;
+
+    .vector {
+      display: none;
+    }
+    .hero-description {
+      background-image: url("../assets/heroimage.png"),
+      url("../assets/backgroundOverlay.png");
+    background-size: cover;
+    background-position: top, center;
+    background-repeat: no-repeat;
+    grid-column: 1/-1;
+    width: 100%;
+      padding: 5rem 2rem;
+      color: #fff;
+      h1 {
+        font-size: 20px;
+      }
+      h3 {
+        font-size: 12px;
+      }
+      .search {
+        width: 80%;
+        display: block;
+        margin: 0;
+        input {
+        
+          &::placeholder {
+            color: #fff;
+          }
+        }
+      }
+    }
+    .image-background {
+      display: none;
+    }
+  }
+  .places{
+    display: none;
+  }
+}

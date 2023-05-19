@@ -1,0 +1,14 @@
+.dashboardLayout{
+
+    display: flex;
+    background: #F5F5F5;
+    .side--bar{
+        width: 150px;
+        height: 100vh;
+    }
+    .dashboardLayout__content{
+        flex: 1;
+        padding: 20px;
+       
+    }
+}

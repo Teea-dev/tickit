@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Raleway:wght@400;500;700&display=swap");
+
+.service-container {
+  margin: 3rem auto;
+  position: relative;
+  max-width: 1320px;
+  
+  .backgroundSVG{
+    position: absolute;
+    max-width: 100%;
+    top: -27em;
+    z-index: -1;
+  }
+  .header {
+    margin: 10rem;
+    h2 {
+
+      font-family: var(--home-font2);
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-family: var(--basic-font);
+      text-align: center;
+    }
+  }
+  .flow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-family: var(--basic-font);
+    font-size: 10px;
+    margin: 10rem;
+    div:nth-of-type(1) {
+      background: #3fdf6c;
+      color: #ffffff;
+      padding: 70px;
+      border-radius: 40px;
+    }
+    div:nth-of-type(2) {
+      background: #2a1e5c;
+      color: #ffffff;
+      padding: 70px;
+      border-radius: 40px;
+    }
+    div:nth-of-type(3) {
+      background: var(--secondary-color);
+      color: #ffffff;
+      padding: 70px;
+      border-radius: 40px;
+    }
+  }
+  .the-how {
+    text-align: center;
+    font-family: var(--home-font2);
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 3rem;
+  }
+  .instructions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7em;
+    .steps-image {
+      width: 500px;
+      height: 500px;
+    }
+    .steps {
+      grid-column: 2/4;
+      .info {
+        font-family: var(--basic-font);
+        font-size: 1rem;
+        line-height: 28px;
+        margin: 2em 0;
+      }
+      .step1 {
+        .search {
+          font-weight: 700;
+          font-size: 2rem;
+          font-family: var(--home-font2);
+          color: var(--secondary-color);
+          margin: 2rem 0;
+          .head {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+          }
+          .one {
+            font-family: var(--basic-font);
+            font-size: 54px;
+          }
+          p {
+            font-family: var(--basic-font);
+            font-size: 16px;
+            font-weight: 400;
+            padding: 0 5em;
+            color: #333735;
+          }
+        }
+      }
+      .step2 {
+        .book {
+          font-weight: 700;
+          font-size: 2rem;
+          font-family: var(--home-font2);
+          color: #2a1e5c;
+          margin: 2rem 0;
+          .head {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+          }
+          .two {
+            font-family: var(--basic-font);
+            font-size: 54px;
+          }
+          p {
+            font-family: var(--basic-font);
+            font-size: 16px;
+            font-weight: 400;
+            padding: 0 5em;
+            color: #333735;
+          }
+        }
+      }
+      .step3 {
+        .ticket {
+          font-weight: 700;
+          font-size: 2rem;
+          font-family: var(--home-font2);
+          color: #3fdf6c;
+          .head {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+          }
+          .three {
+            font-family: var(--basic-font);
+            font-size: 54px;
+          }
+          p {
+            font-family: var(--basic-font);
+            font-size: 16px;
+            font-weight: 400;
+            padding: 0 5em;
+            //   margin: 1em;
+            color: #333735;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+  .service-container{
+    .header{
+      margin: 2rem;
+      h2{
+        font-size: 20px;
+      }
+    }
+    .backgroundSVG{
+    display: none;
+    }
+    .flow{
+      flex-direction: column;
+      gap: 2rem;
+      margin: 2rem;
+      padding: 0;
+
+      div:nth-of-type(1) {
+       margin: 0;
+     
+       text-align: center;
+        padding: 70px 100px;
+        border-radius: 40px;
+      }
+      div:nth-of-type(2) {
+     
+       text-align: center;
+        padding: 70px 100px;
+        border-radius: 40px;
+      }
+      div:nth-of-type(3) {
+       
+       text-align: center;
+        padding: 70px 100px;
+        border-radius: 40px;
+      }
+    }
+    .the-how, .instructions{
+display: none;   
+ }
+  }
+  
+}

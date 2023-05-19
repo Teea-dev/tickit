@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Raleway:wght@500;400;700&display=swap");
+
+
+.places-container{
+    margin: 5rem auto;
+    max-width: 1320px;
+    h2{
+        font-family: var(--home-font);
+        font-size: 32px;
+        font-weight: 700;
+        color: #0A0F0D;
+        text-align: center;
+        margin: 2rem 0;
+    }
+    h4{
+        font-family: var(--basic-font);
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    .venues{
+        display: flex;
+        justify-content: space-around;
+        h3{
+            font-family: var(--basic-font);
+            font-weight: 500;
+            font-size: 20px;
+            color: #0A0F0D;
+            text-align: center;
+        }
+    }
+}
+
+@media screen  and (max-width:768px) {
+    .places-container{
+    .venues{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: .2rem;
+        padding: .5rem;
+    }
+    }
+}
